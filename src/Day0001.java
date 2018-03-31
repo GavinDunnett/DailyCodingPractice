@@ -1,7 +1,3 @@
-import java.util.HashMap; // package needed for map data structure.
-import java.util.Map; // package needed for map data structure.
-import java.util.Set;
-
 /**
  * This class is coding practice from codingbat.com
  * <p>
@@ -19,7 +15,13 @@ import java.util.Set;
  * <p>
  * <p>
  * mapBully({"a": "candy", "b": "dirt"}) → {"a": "", "b": "candy"}
+ *
+ * @author Gavin Dunnett
+ * @version 1.0
  */
+import java.util.HashMap; // package needed for map data structure.
+import java.util.Map; // package needed for map data structure.
+
 public class Day0001 {
 
     //create the map
@@ -27,11 +29,10 @@ public class Day0001 {
 
     /**
      * The main program.
+     *
      * @param args Not used.
      */
     public static void main(String[] args) {
-
-
 
         //populate the map
         mapBully.put("a", "candy");
@@ -53,10 +54,10 @@ public class Day0001 {
     /**
      * This method displays the entire map using an enhanced for loop
      */
-    private static void displayMap(){
+    private static void displayMap() {
 
         // create an Map.Entry object to hold each map entry in turn.
-        for(Map.Entry<String, String> entry : mapBully.entrySet()) {
+        for (Map.Entry<String, String> entry : mapBully.entrySet()) {
             System.out.println(entry.getKey() + " : " + entry.getValue());
         }
     }
