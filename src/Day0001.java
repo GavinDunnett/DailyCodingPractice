@@ -1,3 +1,6 @@
+import java.util.HashMap; // package needed for map data structure.
+import java.util.Map; // package needed for map data structure.
+
 /**
  * This class is coding practice from codingbat.com
  * <p>
@@ -13,15 +16,11 @@
  * * value "". Basically "b" is a bully, taking the value and replacing it
  * with  the empty string.
  * <p>
- * <p>
  * mapBully({"a": "candy", "b": "dirt"}) → {"a": "", "b": "candy"}
  *
  * @author Gavin Dunnett
  * @version 1.0
  */
-import java.util.HashMap; // package needed for map data structure.
-import java.util.Map; // package needed for map data structure.
-
 public class Day0001 {
 
     //create the map

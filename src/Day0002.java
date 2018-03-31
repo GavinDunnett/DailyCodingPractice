@@ -1,3 +1,7 @@
+
+import java.util.Scanner; // package needed to read keyboard input.
+import java.util.HashMap; // package needed for map data structure.
+
 /**
  * This program is coding practice from the book, Java Early Objects.
  * <p>
@@ -15,9 +19,6 @@
  * @author Gavin Dunnett
  * @version 1.0
  */
-import java.util.Scanner; // package needed to read keyboard input.
-import java.util.HashMap; // package needed for map data structure.
-
 public class Day0002 {
 
     /**
