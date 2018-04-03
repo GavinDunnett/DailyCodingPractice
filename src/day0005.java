@@ -30,7 +30,7 @@ public class day0005 {
         //create the string array
         String[] sArray = {"a", "b", "a", "c", "b"};
 
-        //enhanced for loop
+        //enhanced for loop over the string array
         for (String key : sArray) {
             if(!sMap.containsKey(key)) sMap.put(key, 0); // if key missing, create.
             Integer i = sMap.get(key); // get key's current quantity.
