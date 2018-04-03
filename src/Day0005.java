@@ -20,7 +20,7 @@ import java.util.HashMap; // package required for hash type map structures.
  * @author Gavin Dunnett
  * @version 1.0
  */
-public class day0005 {
+public class Day0005 {
 
     public static void main(String[] args) {
 
