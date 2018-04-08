@@ -59,7 +59,5 @@ public class Day0006 {
         for(Map.Entry<String, Boolean> entry : map.entrySet()) {
             System.out.println(entry.getKey() + " : " + entry.getValue());
         }
-
-
     }
 }
