@@ -13,7 +13,7 @@ import java.util.StringTokenizer; // package required to tokenize strings.
 public class Day0007 {
 
 	// emun class to hold meaningfull field names.
-	private enum Field {
+	public enum Field {
 		ICAO(0),
 		LAT(1),
 		LON(2),
@@ -24,7 +24,7 @@ public class Day0007 {
 		STATE(7),
 		COUNTRY(8);
 
-		private int value; // field to hold value.
+		public int value; // field to hold value.
 
 		Field(int value) { // enums constructor.
 			this.value = value;
