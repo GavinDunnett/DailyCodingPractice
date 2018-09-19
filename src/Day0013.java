@@ -85,7 +85,7 @@ public class Day0013 {
 	}
 
 	// node inner-class
-	private static class Node {
+	protected static class Node {
 		private String name;
 		private String id;
 
