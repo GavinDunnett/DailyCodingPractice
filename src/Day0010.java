@@ -1,12 +1,11 @@
 /**
  * This class is coding practice from Coding.bat
  * <p>
- * scoresIncreasing Challenge:
- * Given an array of scores, return true if each score is equal or greater than
- * the one before. The array will be length 2 or more.
+ * scoresIncreasing Challenge: Given an array of scores, return true if each
+ * score is equal or greater than the one before. The array will be length 2 or
+ * more.
  * <p>
- * scoresIncreasing([1, 3, 4]) → true
- * scoresIncreasing([1, 3, 2]) → false
+ * scoresIncreasing([1, 3, 4]) → true scoresIncreasing([1, 3, 2]) → false
  * scoresIncreasing([1, 1, 4]) → true
  *
  * @author Gavin Dunnett
@@ -22,11 +21,12 @@ public class Day0010 {
     public static void main(String[] args) {
 
         // create the array of ints
-        int[] sArray = {1, 3, 4};
+        int[] sArray = { 1, 3, 4 };
 
         // test & display results
         System.out.println(ScoresIncreasing(sArray));
     }
+
     /**
      * This method implements the challenge.
      *
@@ -43,8 +43,9 @@ public class Day0010 {
         int oneBefore = scores[0];
 
         // enhanced for loop that iterates through the scores array
-        for(int d : scores) {
-            if(d < oneBefore) isEqualGreater = false; // if less, set flag false
+        for (int d : scores) {
+            if (d < oneBefore)
+                isEqualGreater = false; // if less, set flag false
             oneBefore = d; // store this value for comparison in next iteration
         }
 
