@@ -5,16 +5,14 @@ import java.util.HashMap; // package needed for map data structure.
 /**
  * This program is coding practice from the book, Java Early Objects.
  * <p>
- * Preamble:
- * Many companies use telephone numbers such as 555-GET-FOOD so that the
- * number is easier for their customers to remember. On a standard telephone,
- * the alphabet letters are mapped to the number buttons.
+ * Preamble: Many companies use telephone numbers such as 555-GET-FOOD so that
+ * the number is easier for their customers to remember. On a standard
+ * telephone, the alphabet letters are mapped to the number buttons.
  * <p>
- * Alphabet Telephone Number Translator Challenge.
- * Write an application that asks the user to enter a 10 character telephone
- * number in the format xxx-xxx-xxxx. The application should display the
- * telephone number with any alphabet characters translated to their numeric
- * equivalent.
+ * Alphabet Telephone Number Translator Challenge. Write an application that
+ * asks the user to enter a 10 character telephone number in the format
+ * xxx-xxx-xxxx. The application should display the telephone number with any
+ * alphabet characters translated to their numeric equivalent.
  *
  * @author Gavin Dunnett
  * @version 1.0
@@ -57,17 +55,17 @@ public class Day0002 {
         mapTele.put('Y', '9');
         mapTele.put('Z', '9');
 
-        //create object to read keyboard input
+        // create object to read keyboard input
         Scanner in = new Scanner(System.in);
 
-        //ask th user to input the telephone number
+        // ask th user to input the telephone number
         System.out.println("Enter telephone number XXX-XXX-XXXX : ");
 
-        //declare a string to get the number while converting all characters to
-        //uppercase
+        // declare a string to get the number while converting all characters to
+        // uppercase
         String number = in.nextLine().toUpperCase();
 
-        //enhanced for loop to display the number in numeric form
+        // enhanced for loop to display the number in numeric form
         for (Character c : number.toCharArray()) {
             if (c >= 'A' && c <= 'Z') { // test if letter
                 System.out.print(mapTele.get(c)); // covert letter
