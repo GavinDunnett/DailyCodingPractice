@@ -4,17 +4,15 @@ import java.util.Map; // package needed for map data structure.
 /**
  * This class is coding practice from codingbat.com
  * <p>
- * Preamble:
- * Maps are a great data structure for taking in large amounts of data and
- * giving super-fast access. A map stores key/value pairs, where each key has
- * an associate value. Given a particular key, the map can look up the
+ * Preamble: Maps are a great data structure for taking in large amounts of data
+ * and giving super-fast access. A map stores key/value pairs, where each key
+ * has an associate value. Given a particular key, the map can look up the
  * associated value very quickly.
  * <p>
- * * mapBully Challenge:
- * Modify and return the given map as follows: if the key "a" has a
- * value, set the key "b" to have that value, and set the key "a" to have the
- * * value "". Basically "b" is a bully, taking the value and replacing it
- * with  the empty string.
+ * * mapBully Challenge: Modify and return the given map as follows: if the key
+ * "a" has a value, set the key "b" to have that value, and set the key "a" to
+ * have the * value "". Basically "b" is a bully, taking the value and replacing
+ * it with the empty string.
  * <p>
  * mapBully({"a": "candy", "b": "dirt"}) → {"a": "", "b": "candy"}
  *
@@ -23,7 +21,7 @@ import java.util.Map; // package needed for map data structure.
  */
 public class Day0001 {
 
-    //create the map
+    // create the map
     private static Map<String, String> mapBully = new HashMap<>();
 
     /**
@@ -33,18 +31,18 @@ public class Day0001 {
      */
     public static void main(String[] args) {
 
-        //populate the map
+        // populate the map
         mapBully.put("a", "candy");
         mapBully.put("b", "dirt");
 
         displayMap();
 
-        //set key b's value equal to key a's
+        // set key b's value equal to key a's
         mapBully.put("b", mapBully.get("a"));
 
         displayMap();
 
-        //set key a's value to ""
+        // set key a's value to ""
         mapBully.put("a", "");
 
         displayMap();
