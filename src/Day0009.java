@@ -16,8 +16,7 @@ public class Day0009 {
 	public static void main(String[] args) throws IOException {
 
 		// call method to get the icaoArray
-		ArrayList<Record> icaoArray =
-						fetchICAO("/Users/gavin/Downloads/icaodata.csv");
+		ArrayList<Record> icaoArray = fetchICAO("/Users/gavin/Downloads/icaodata.csv");
 
 		// call method to display that icaoArray
 		showArray(icaoArray);
@@ -47,16 +46,8 @@ public class Day0009 {
 			tokens = line.split(",");
 
 			// create a new Record object
-			Record r = new Record(
-							tokens[0],
-							tokens[1],
-							tokens[2],
-							tokens[3],
-							tokens[4],
-							tokens[5],
-							tokens[6],
-							tokens[7],
-							tokens[8]);
+			Record r = new Record(tokens[0], tokens[1], tokens[2], tokens[3], tokens[4], tokens[5], tokens[6],
+					tokens[7], tokens[8]);
 			icaoArray.add(r); // add the record to the array
 		}
 
@@ -114,15 +105,8 @@ public class Day0009 {
 		 * @param city
 		 * @param state
 		 */
-		public Record(String icao,
-									String lat,
-									String lon,
-									String type,
-									String size,
-									String name,
-									String city,
-									String state,
-									String country) {
+		public Record(String icao, String lat, String lon, String type, String size, String name, String city,
+				String state, String country) {
 
 			// initilize & store parameters as field variable
 			this.icao = icao;
