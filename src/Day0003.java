@@ -4,11 +4,10 @@ import java.util.StringTokenizer; // required to tokenize strings
 /**
  * This class is coding practice from the book, Java Early Objects.
  * <p>
- * Word Counter Challenge:
- * Write a method that accepts a String object as an argument and returns the
- * number of words it contains. Demonstrate the method in a program that asks
- * the user to input a string then passes it to the method. The number of
- * words in the string should be displayed on the screen.
+ * Word Counter Challenge: Write a method that accepts a String object as an
+ * argument and returns the number of words it contains. Demonstrate the method
+ * in a program that asks the user to input a string then passes it to the
+ * method. The number of words in the string should be displayed on the screen.
  *
  * @author Gavin Dunnett
  * @version 1.0
@@ -36,8 +35,8 @@ public class Day0003 {
     }
 
     /**
-     * This method uses the StringTokenizer class to calculate the number of
-     * words in a given string.
+     * This method uses the StringTokenizer class to calculate the number of words
+     * in a given string.
      *
      * @param s A String with a sequence of words.
      * @return The number of words in that string.
