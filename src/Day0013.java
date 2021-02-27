@@ -26,7 +26,6 @@ public class Day0013 {
 
 		FIFO.pop();
 
-
 	}
 
 	// Stack data structure inner-class
@@ -41,24 +40,25 @@ public class Day0013 {
 			this.size = size;
 		}
 
-		public boolean push(Node newNode){
-			if(top <= size-1) {
+		public boolean push(Node newNode) {
+			if (top <= size - 1) {
 				data[++top] = newNode.deepCopy(); // pre-increments top then pushes node
 				return true; // successful push
-			}
-			else return false; // overflow
+			} else
+				return false; // overflow
 		}
 
 		public Node pop() {
-			if(top > -1 ) {
+			if (top > -1) {
 				return data[top--]; // returns a shallow copy then post decrements top
-			}
-			else return null; // underflow
+			} else
+				return null; // underflow
 		}
 
 		public void showAll() {
-			for(Node node : data) {
-				if(!Objects.isNull(node)) System.out.println(node.toString());
+			for (Node node : data) {
+				if (!Objects.isNull(node))
+					System.out.println(node.toString());
 			}
 		}
 
@@ -67,20 +67,24 @@ public class Day0013 {
 		}
 
 		public boolean isEmpty() {
-			if(top>-1) return false;
-			else return true;
+			if (top > -1)
+				return false;
+			else
+				return true;
 		}
 
 		public boolean isFull() {
-			if(top <= size-1) return false;
-			else return true;
+			if (top <= size - 1)
+				return false;
+			else
+				return true;
 		}
 
 		public Node peek() {
-			if(top > -1 ) {
+			if (top > -1) {
 				return data[top]; // returns a shallow copy of this node
-			}
-			else return null; // underflow
+			} else
+				return null; // underflow
 		}
 	}
 
@@ -90,8 +94,8 @@ public class Day0013 {
 		private String id;
 
 		public Node() {
-		this.name = "";
-		this.id = "";
+			this.name = "";
+			this.id = "";
 		}
 
 		public Node(String name, String id) {
@@ -101,10 +105,7 @@ public class Day0013 {
 
 		@Override
 		public String toString() {
-			return "Node{" +
-							"name='" + name + '\'' +
-							", id='" + id + '\'' +
-							'}';
+			return "Node{" + "name='" + name + '\'' + ", id='" + id + '\'' + '}';
 		}
 
 		public Node deepCopy() {
